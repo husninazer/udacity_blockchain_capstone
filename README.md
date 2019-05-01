@@ -1,6 +1,34 @@
-# Udacity Blockchain Capstone
+# Decentralized housing project
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+  Project - Listing real assets like house in tokens that can be verified.
+
+  ### Testing
+  1. truffle develop
+  2. compile
+  3. migrate --rest (deployment)
+  4. test
+
+
+# Contracts Deployed on Rinkeby
+
+  Replacing 'Verifier'
+  --------------------
+  - transaction hash:    0x4c09f761f53fbd9bf7d44aaa1ee2e7ffa60549c9892da9ea5675e546c68637bc
+
+  - contract address:    0x50676D8fEd75f33c6841750F7b39d320Fd6B10af
+  - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+
+
+
+  Deploying 'SolnSquareVerifier'
+  ------------------------------
+  - transaction hash:    0x9540f2157ab368a132c378cc1deb79abb7e5f8109d6f74c4f9680ca62d20b1cd
+
+  - contract address:    0xFFBb80EAf75FA945d03156dC642cF21Fa5AC2577
+  - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+
+
+
 
 # Project Resources
 

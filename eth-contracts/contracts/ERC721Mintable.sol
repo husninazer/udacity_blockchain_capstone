@@ -585,7 +585,6 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
       require(_exists(tokenId), "Token ID does not exist");
       _tokenURIs[tokenId] =  strConcat(baseTokenURI() , uint2str(tokenId));
     }
-
 }
 
 //  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
