@@ -7,14 +7,38 @@ import './ERC721Mintable.sol';
 
 // TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
 
-
-
+//Interface
+ contract Verfier {
+   function verifyTx(
+           uint[2] memory a,
+           uint[2] memory a_p,
+           uint[2][2] memory b,
+           uint[2] memory b_p,
+           uint[2] memory c,
+           uint[2] memory c_p,
+           uint[2] memory h,
+           uint[2] memory k,
+           uint[2] memory input
+       ) public returns (bool r) ;
+ }
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
 
 contract SolnSquareVerifier is MyContract {
 
+Verifier verifier;
 
+constructor
+            (
+              address verifierAddress,
+              string memory _name,
+              string memory _symbol
+            )
+            MyContract()
+            public
+{
+    verifier = Verifier(verifierAddress);
+}
 
 // TODO define a solutions struct that can hold an index & an address
 
@@ -27,7 +51,7 @@ struct solutions {
 solutions[] solutionsList;
 
 // TODO define a mapping to store unique solutions submitted
-mapping(uint256 => solutions) private solutionsMap;
+mapping(bytes32 => solutions) private solutionsMap;
 
 
 // TODO Create an event to emit when a solution is added
@@ -41,6 +65,7 @@ function addSolution
                     address _solutionAddress
                   )
                   public
+                  returns(bool)
 {
   solutions memory solution = solutions({
     index: _index,
@@ -48,6 +73,7 @@ function addSolution
   });
   solutionsList.push(solution);
   emit SolutionAdded(_solutionAddress);
+  return true;
 }
 
 
@@ -55,15 +81,42 @@ function addSolution
 //  - make sure the solution is unique (has not been used before)
 //  - make sure you handle metadata as well as tokenSuplly
 
-function mint
-            (
+function preMint
+              (
+                address to,
+                uint256 tokenId,
+                uint[2] memory a,
+                uint[2] memory a_p,
+                uint[2][2] memory b,
+                uint[2] memory b_p,
+                uint[2] memory c,
+                uint[2] memory c_p,
+                uint[2] memory h,
+                uint[2] memory k,
+                uint[2] memory input
+              )
+              public
+              returns (bool)
+  {
+      bool status = verifier.verifyTx
+                                      (
+                                        a,
+                                        a_p,
+                                        b,
+                                        b_p,
+                                        c,
+                                        c_p,
+                                        h,
+                                        k,
+                                        input
+                                      );
 
-            )
-            public
-{
-//  bool status = verifyTx()
+      // Require solution is true
+      require(status, "Solution not true");
 
-}
+      // Require unique
+      require(solutionsMap[keccak256(abi.encodePacked(  a, a_p, b, b_p, c, c_p, h, k, input))].solutionsAddress == address(0), "Solution already exists" );
 
-
+      return mint(to, tokenId,"http://sample.plot/");
+  }
 }
