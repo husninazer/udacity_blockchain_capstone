@@ -2,11 +2,11 @@
 
   Project - Listing real assets like house in tokens that can be verified.
 
-  ### Testing
-  1. truffle develop
-  2. compile
-  3. migrate --rest (deployment)
-  4. test
+  ### Testing the contracts
+  1. **truffle develop** on the project folder to view the truffle development mode
+  2. compile the contracts by **compile**
+  3. **migrate --reset --network <developemnt/rinkeby>**
+  4. **test** to test all the contracts.
 
 
 # Contracts Deployed on Rinkeby
