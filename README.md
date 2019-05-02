@@ -32,12 +32,12 @@ Deploying 'SolnSquareVerifier'
 
 
 
- ### ABI: MyContract.josn (build/contracts)
+ ### ABI: MyContract.json (build/contracts)
 
 
 # Token on opensea
 
- URL : https://rinkeby.opensea.io/category/plotv4
+ URL : https://rinkeby.opensea.io/category/plotv5
 
 
 # Project Resources
