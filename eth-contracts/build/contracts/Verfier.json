@@ -707,14 +707,14 @@
           }
         ],
         "contractDependencies": [
-          154,
-          939,
           641,
-          7406,
-          58,
-          106,
+          1081,
           1052,
-          1081
+          939,
+          106,
+          154,
+          58,
+          7406
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -3558,14 +3558,14 @@
           }
         ],
         "contractDependencies": [
-          154,
-          939,
           641,
-          7406,
-          58,
-          106,
+          1081,
           1052,
-          1081
+          939,
+          106,
+          154,
+          58,
+          7406
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -5768,7 +5768,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.8",
-  "updatedAt": "2019-05-02T20:52:30.571Z",
+  "updatedAt": "2019-05-02T22:34:14.340Z",
   "devdoc": {
     "methods": {}
   },

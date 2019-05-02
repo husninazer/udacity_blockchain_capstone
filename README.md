@@ -14,18 +14,20 @@
 
 Deploying 'Verifier'
 --------------------
-- transaction hash:    0x781f70866b9985a1ae9f4400d6cf224b7509c7939d5fcabf61e7d0650963f8b6
-- contract address:    0x8702dE38c1861EE445931E6C85f7491C9e78D8FC
+- transaction hash:    0xc6d3dc68bef0ad512d52fa2211d1c67117daf233a70ea77bba1bc805c4005ee5
+- contract address:    0x324729f0Ddb8908E25a9Cc84B4Dc34124ffF4496
+- block number:        4313811
 - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
 
 
 
 Deploying 'SolnSquareVerifier'
 ------------------------------
-- transaction hash:    0x1b0fd7909fdfff786fefa3de98be803373e6341198943ea5da80582c0dba8616
-- contract address:    0xeB8c7B6C38161c88EE135d50bdFaD480C81640AB
-- block number:        4313418
+- transaction hash:    0xc8cae33996b0fce962a0ce4d90b3036a24220e42d489e66ae419a46e8a635465
+- contract address:    0x25789aE4D1D016dd193a5B38D9476D55F789Edf3
+- block number:        4313812
 - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+
 
 
 

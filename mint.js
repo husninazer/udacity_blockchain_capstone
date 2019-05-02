@@ -2,11 +2,11 @@ const HDWalletProvider = require("truffle-hdwallet-provider")
 const web3 = require('web3')
 const MNEMONIC = "they pulp arctic fringe tide bar garment wisdom industry label across silent"
 const INFURA_KEY = "bc893195963a48068f10e3286addec74"
-const NFT_CONTRACT_ADDRESS = "0xeB8c7B6C38161c88EE135d50bdFaD480C81640AB"
+const NFT_CONTRACT_ADDRESS = "0x25789aE4D1D016dd193a5B38D9476D55F789Edf3"
 const OWNER_ADDRESS = "0x54c6C99aD8297a0197C2DE905b59e315903A852F"
 const NETWORK = "rinkeby"
 let  proofs = [];
-const account = "0xe33EEcb671df5Ab72E6730c94501c7F969258e10"
+const account = "0x253FA1CFfcFF771cC897963417dAb7C5ae5f4fDa"
 
 
 // Push PROOFS
@@ -174,16 +174,16 @@ const account = "0xe33EEcb671df5Ab72E6730c94501c7F969258e10"
     proofs[10] = {
     	"proof":
     	{
-    		"A":["0x2b0ac57f4e29c9a57ce96108d7661a22fbc33e3ea5232e5d14515a3585397414", "0x14b22f27e6c7c9dfe4271ca937b90f216cec91613649e1ff5ed385f9722586e4"],
-    		"A_p":["0x6340a5b2403a892bece7dc5593952c261344011ca120e1ad5b3fb364e00e776", "0x184aba09b7953bfda8570a600f325edcf5dd6072dddd969e4f45bb414389719d"],
+    		"A":["0x1806e0204f16c60a1e6f0739587a1109c47aaa9585cc7f462661a12b64386840", "0x11d2ef07163ec625ef6cf10551b7842a4755ac4a15a5e3ea4d73a7f8e45e56e6"],
+    		"A_p":["0x1733d885614c26f66a6973fee2947b08379815d137f8e444605ef82b2b2018a6", "0x1cdcd37a0cfacbdba32621379f167902aec511879d83d90642237c2699f11a8a"],
     		"B":
-    			[["0x25c655772b62b63c32902f51f7eef746411cd8a815d7a0138e8b250e464d29d9", "0x2f3524af9ae58dd59a81143f6e6723e79403805dfc9e9c9393c0fcc64736ca18"], ["0x25cd1aa48a5aff039f69350136c4bcda5baa0e36be4c9e56c7892e3590fba8c", "0x12b9fb6e1867f84415f6663b6e8dbe3b47b0e77176b4a328b1feb0089f771f2b"]],
+    			[["0x13562eb26c5da7e8538e991fcff0877fc80ab83ef181bec34640056ace2de228", "0x23ef0ed2267a8fa32e5eea8b4dbf961798e3f328509026b48350502035f9c936"], ["0x246a8298f65d1b8d2f4ac95e8775c79198a247886ddaca042dd9a4de5683e74b", "0xfd1a2e860ecda5dbe10d9582f113b9138aee777916479060e6218e465b96125"]],
 
-    		"B_p":["0x16c2697506bb020c200fb7b5aba6ad31608d6f9105638ad2dda7cfa5c0245f19", "0x1f485eec63bccf88569bcc5e512ecab5226de57a9da0086555679bb9124b2dc3"],
-    		"C":["0x16def2d21b9c15c7bdbc1130b723b335284ef029c54d4f47221b5f01cbb06c23", "0x4e4b28909ac93820558faa691e34aaae2f4205fc879c00594aacf3429af7611"],
-    		"C_p":["0x1110db0c2aba0c5049d77a134203a9278928959dc82063398ec6fad0d56837ce", "0x4ddc98d7bc5b2492d60c69ebc8830768ebd7f16c48ba5a146c34895f3720db0"],
-    		"H":["0x1098467242c1e6c0a957ec9739bcfceb44f5783694bc134fd97c156c207f3a81", "0x300efd9f46743185a7db5d6bf9330acbc7d478c161f66e461928a9439b4dfb37"],
-    		"K":["0x2bf98e2219914e57dcfa69a58c0d4f4092212b9a5b6463438ddbd5e1ff5ccbe5", "0x5ed41dbc0613f24b11ff4160cc9c071d648c1be3154d2e39088c45ecca0947a"]
+    		"B_p":["0x18d447387ec4f4e2c05035d72fc0b1a77f6176bdd5a7af66220dfe1eb967ef53", "0x101097946ba827bbb0b638b0f4f1d6f3b1fbe51636f6d2a889b662ac083aa376"],
+    		"C":["0x66a56c70702988d48771962dbeb597aed6f72e859a181e29d1c394f2ba1bc00", "0x19c3c6f6278b0d465db9814a99b8b676472b86d6eb57ec159292dc2ca4a8c5de"],
+    		"C_p":["0x144b3c0c57b37fcca697722f504120d5e8bacd56e84f784e1967b4ae310bb5a4", "0xe5b6a17fe28ce1de5faea5bf216f18c0fcd1db152592d80bf3ba8ce677570b4"],
+    		"H":["0x120a71b109ce400d0341a6a42f1869763e59b1274d54e7e2ec58e7526468d9c8", "0x2a1c7a9891acdfc64c8397e1ed593f983ea8a368e9291d5f188cbbd7fb91451e"],
+    		"K":["0x117fcee242f1a6ed6dfc433a729d740360f5f2af701a947c54eed4af878452e2", "0x143d788220bd11ccb471ee0b22089baf9bc96ac9ebbab1e23aff0849eb21f81b"]
     	},
     	"input":[9,1]}
 
@@ -216,7 +216,7 @@ async function mint() {
 
           let result = await nftContract.methods.preMint(
                                                             account,
-                                                            3,
+                                                            6,
                                                             proofs[i].proof.A,
                                                             proofs[i].proof.A_p,
                                                             proofs[i].proof.B,
@@ -226,7 +226,7 @@ async function mint() {
                                                             proofs[i].proof.H,
                                                             proofs[i].proof.K,
                                                             proofs[i].input).send(
-                                                            { from: OWNER_ADDRESS, gas: 6500000})
+                                                            { from: OWNER_ADDRESS, gas: 6700000})
 
              console.log("Minted Token. Transaction: " + result);
 

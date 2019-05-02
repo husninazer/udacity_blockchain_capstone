@@ -3,7 +3,7 @@ let Verifier = artifacts.require('Verifier');
 
 // Test verification with correct proof
 // - use the contents from proof.json generated from zokrates steps
-const proof = require('../../zokrates/code/square/proof.json');
+const proof = require('./proof.json');
 
 contract('Verifier', accounts => {
 
