@@ -14,19 +14,19 @@
 
 Deploying 'Verifier'
 --------------------
-- transaction hash:    0xcade5bf7c4fcc2a56869035ef5981bde7e581008f754aa2452a60b27f9404812
-- contract address:    0x1C36807AE280F35dd4101B73673B614aCb0D99d0
-- block number:        4311374
+- transaction hash:    0x781f70866b9985a1ae9f4400d6cf224b7509c7939d5fcabf61e7d0650963f8b6
+- contract address:    0x8702dE38c1861EE445931E6C85f7491C9e78D8FC
 - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
 
 
 
 Deploying 'SolnSquareVerifier'
 ------------------------------
-- transaction hash:    0x3c14ca4b49fb698e31234bf0de431bf021914a1330f1e98b3e33f0de3a4a3dce
-- contract address:    0xad94D49561FF5F5EA9Caa005dbB0C278304E9E75
-- block number:        4311375
+- transaction hash:    0x1b0fd7909fdfff786fefa3de98be803373e6341198943ea5da80582c0dba8616
+- contract address:    0xeB8c7B6C38161c88EE135d50bdFaD480C81640AB
+- block number:        4313418
 - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+
 
 
 
@@ -35,7 +35,7 @@ Deploying 'SolnSquareVerifier'
 
 # Token on opensea
 
- URL : https://rinkeby.opensea.io/category/plotv3
+ URL : https://rinkeby.opensea.io/category/plotv4
 
 
 # Project Resources

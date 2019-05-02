@@ -14,25 +14,28 @@ contract('', accounts => {
     const index_1 = 1;
     const index_2 = 2;
 
-    describe('SolnSquareVerifer Test', function () {
+    describe('SolnSquareVerifer Test',  function () {
         beforeEach(async function () {
             let verifier = await Verifier.new({from: account_one});
-            this.contract = await SolnSquareVerifier.new(verifier.address, "PLOT", "MSQ", {from: account_one});
+            this.contract = await SolnSquareVerifier.new(verifier.address, {from: account_one});
         })
 
-        it('Can be added for Cotnract', async function () {
-          let status = true;
+        it('if a new solution can be added for contract - SolnSquareVerifier', async function () {
+
+
+          let status1 = false;
+
           try {
-            let status = await this.contract.addSolution.call(1, account_one,{from: account_one});
+             status1 = await this.contract.addSolution.call(1, account_two, {from: account_one});
           }
           catch(e) {
             console.log(e);
           }
 
-            assert.equal(status, true, "Can be added");
+          assert.equal(status1, true, "New solution could not be added");
         })
 
-        it('Can be minted for Contract', async function () {
+        it('if an ERC721 token can be minted for contract - SolnSquareVerifier', async function () {
           let status = await this.contract.preMint.call
                               (
                                 accounts[5],
@@ -49,7 +52,7 @@ contract('', accounts => {
                                 {from: accounts[0], gas: 3000000}
                               );
 
-            assert.equal(status, true, "The solution already exist");
+            assert.equal(status, true, "The solution exist and minted");
         })
 
 
