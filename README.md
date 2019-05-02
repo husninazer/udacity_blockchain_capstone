@@ -11,23 +11,28 @@
 
 # Contracts Deployed on Rinkeby
 
-  Replacing 'Verifier'
+
+Replacing 'Verifier'
   --------------------
-  - transaction hash:    0x4c09f761f53fbd9bf7d44aaa1ee2e7ffa60549c9892da9ea5675e546c68637bc
-
-  - contract address:    0x50676D8fEd75f33c6841750F7b39d320Fd6B10af
+  - transaction hash:    0x2177308537ae60ae2166f69f4d1c3e990e1b5033c64a478052ffb3bf93281e7d
+  - contract address:    0x2e64Bb40FA4E2Ca9827cf7A7DE807007ad781130
   - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
 
 
 
-  Deploying 'SolnSquareVerifier'
+  Replacing 'SolnSquareVerifier'
   ------------------------------
-  - transaction hash:    0x9540f2157ab368a132c378cc1deb79abb7e5f8109d6f74c4f9680ca62d20b1cd
-
-  - contract address:    0xFFBb80EAf75FA945d03156dC642cF21Fa5AC2577
+  - transaction hash:    0x51454c3c6a3c82c2e439d534c22f43b4e0edfeaa1b54caf2043df051ff1a799d
+  - contract address:    0x4E0849b4c03Bc13785f426215B4Df808Be67E8CF
   - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
 
 
+ ### ABI: MyContract.josn (build/contracts)
+
+
+# Token on opensea
+
+ URL : https://rinkeby.opensea.io/category/plotv2
 
 
 # Project Resources

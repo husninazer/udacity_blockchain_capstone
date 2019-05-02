@@ -194,7 +194,7 @@ contract ERC721 is Pausable, ERC165 {
         require(_tokenOwner[tokenId] == msg.sender || isApprovedForAll(_tokenOwner[tokenId], msg.sender), "Not the owner");
 
         // TODO add 'to' address to token approvals
-        _operatorApprovals[msg.sender][to] = true;
+        _tokenApprovals[tokenId] = to;
 
         // TODO emit Approval Event
         emit Approval(msg.sender, to, tokenId);
@@ -249,7 +249,7 @@ contract ERC721 is Pausable, ERC165 {
      */
     function _exists(uint256 tokenId) internal view returns (bool) {
         address owner = _tokenOwner[tokenId];
-        return owner != address(0);
+        return owner != address(0x0);
     }
 
     /**
@@ -269,13 +269,13 @@ contract ERC721 is Pausable, ERC165 {
     function _mint(address to, uint256 tokenId) internal {
 
         // TODO revert if given tokenId already exists or given address is invalid
-        require(!_exists(tokenId) || to != address(0), "Address Invalid / Token already exists");
+        require(!_exists(tokenId) || to != address(0x0), "Address Invalid / Token already exists");
 
         // TODO mint tokenId to given address & increase token count of owner
         _tokenOwner[tokenId] = to;
         _ownedTokensCount[to].increment();
         // TODO emit Transfer event
-        emit Transfer(msg.sender, to,  tokenId);
+        emit Transfer(address(0x0), to,  tokenId);
     }
 
     // @dev Internal function to transfer ownership of a given token ID to another address.
@@ -286,10 +286,10 @@ contract ERC721 is Pausable, ERC165 {
         require(ownerOf(tokenId) == from, "From address not the token holder");
 
         // TODO: require token is being transfered to valid address
-        require(to != address(0), "Invalid To Address");
+        require(to != address(0x0), "Invalid To Address");
 
         // TODO: clear approval
-        _operatorApprovals[from][to] = false;
+        _clearApproval(tokenId);
 
         // TODO: update token counts & transfer ownership of the token ID
           _tokenOwner[tokenId] = to;
@@ -298,6 +298,7 @@ contract ERC721 is Pausable, ERC165 {
 
 
         // TODO: emit correct event
+        emit Transfer(from, to, tokenId);
     }
 
     /**
@@ -322,8 +323,8 @@ contract ERC721 is Pausable, ERC165 {
 
     // @dev Private function to clear current approval of a given token ID
     function _clearApproval(uint256 tokenId) private {
-        if (_tokenApprovals[tokenId] != address(0)) {
-            _tokenApprovals[tokenId] = address(0);
+        if (_tokenApprovals[tokenId] != address(0x0)) {
+            _tokenApprovals[tokenId] = address(0x0);
         }
     }
 }
