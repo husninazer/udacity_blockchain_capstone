@@ -31,7 +31,7 @@ contract('TestERC721Mintable', accounts => {
         it('should return token uri', async function () {
           let token_URI = await this.contract.tokenURI(3);
         //  console.log("token_URI", token_URI);
-          assert.equal(token_URI, "http://sample.plot/3", "Incorrect URI");
+          assert.equal(token_URI, "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/3", "Incorrect URI");
         })
 
         it('should transfer token from one owner to another', async function () {
@@ -55,7 +55,7 @@ contract('TestERC721Mintable', accounts => {
         it('should fail when minting when address is not contract owner', async function () {
           let status = true;
           try{
-             status = await  this.contract.mint.call(accounts[3], 3, "http://sample.plot/", {from: accounts[2]});
+             status = await  this.contract.mint.call(accounts[3], 3, "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/", {from: accounts[2]});
           }
           catch(e) {
             status = false;

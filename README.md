@@ -12,19 +12,22 @@
 # Contracts Deployed on Rinkeby
 
 
-Replacing 'Verifier'
-  --------------------
-  - transaction hash:    0x2177308537ae60ae2166f69f4d1c3e990e1b5033c64a478052ffb3bf93281e7d
-  - contract address:    0x2e64Bb40FA4E2Ca9827cf7A7DE807007ad781130
-  - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+Deploying 'Verifier'
+--------------------
+- transaction hash:    0xcade5bf7c4fcc2a56869035ef5981bde7e581008f754aa2452a60b27f9404812
+- contract address:    0x1C36807AE280F35dd4101B73673B614aCb0D99d0
+- block number:        4311374
+- account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
 
 
 
-  Replacing 'SolnSquareVerifier'
-  ------------------------------
-  - transaction hash:    0x51454c3c6a3c82c2e439d534c22f43b4e0edfeaa1b54caf2043df051ff1a799d
-  - contract address:    0x4E0849b4c03Bc13785f426215B4Df808Be67E8CF
-  - account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+Deploying 'SolnSquareVerifier'
+------------------------------
+- transaction hash:    0x3c14ca4b49fb698e31234bf0de431bf021914a1330f1e98b3e33f0de3a4a3dce
+- contract address:    0xad94D49561FF5F5EA9Caa005dbB0C278304E9E75
+- block number:        4311375
+- account:             0x54c6C99aD8297a0197C2DE905b59e315903A852F
+
 
 
  ### ABI: MyContract.josn (build/contracts)
@@ -32,7 +35,7 @@ Replacing 'Verifier'
 
 # Token on opensea
 
- URL : https://rinkeby.opensea.io/category/plotv2
+ URL : https://rinkeby.opensea.io/category/plotv3
 
 
 # Project Resources

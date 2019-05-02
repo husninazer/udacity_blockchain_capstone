@@ -30,9 +30,7 @@ Verifier verifier;
 
 constructor
             (
-              address verifierAddress,
-              string memory _name,
-              string memory _symbol
+              address verifierAddress
             )
             MyContract()
             public
@@ -117,6 +115,6 @@ function preMint
       // Require unique
       require(solutionsMap[keccak256(abi.encodePacked(  a, a_p, b, b_p, c, c_p, h, k, input))].solutionsAddress == address(0), "Solution already exists" );
 
-      return mint(to, tokenId,"http://sample.plot/");
+      return mint(to, tokenId);
   }
 }

@@ -56,8 +56,9 @@ module.exports = {
         return new HDWalletProvider("they pulp arctic fringe tide bar garment wisdom industry label across silent", 'https://rinkeby.infura.io/v3/377d084fe2e34f5fb390453b8540cb1e');
       },
       network_id: 4,
-      gas: 4500000,
-      gasPrice: 10000000000,
+      gas: 6500000,
+      gasPrice: 100000000000,
+      from: '0xe33EEcb671df5Ab72E6730c94501c7F969258e10'
     }
 
     // Another network with more advanced options...
